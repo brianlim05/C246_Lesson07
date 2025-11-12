@@ -98,6 +98,24 @@ const Exercise3D = () => {
 const Exercise3E = () => {
     return (
         <View style={styles.parent}>
+            <View style={[styles.child, { backgroundColor: "powderblue" }]}>
+                <Text>Child One</Text>
+            </View>
+
+            <View style={[styles.child, { backgroundColor: "skyblue" }]}>
+                <Text>Child Two</Text>
+            </View>
+
+            <View style={[styles.child, { backgroundColor: "steelblue" }]}>
+                <Text>Child Three</Text>
+            </View>
+        </View>
+    );
+};
+
+const Exercise4 = () => {
+    return (
+        <View style={styles.parent}>
             <View style={[styles.child, { backgroundColor: "lightblue",justifyContent: "center",alignItems:"center" }]}>
                 <Text>Square 1</Text>
             </View>
@@ -113,13 +131,7 @@ const Exercise3E = () => {
     );
 };
 
-const Exercise4 = () => {
-    return (
-        <View style={styles.parent}></View>
-    )
-}
-
-export default Exercise3E;
+export default Exercise4;
 
 const styles = StyleSheet.create({
     greenBox: {
